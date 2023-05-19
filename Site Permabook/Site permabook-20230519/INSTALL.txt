@@ -1,0 +1,25 @@
+FICHIERS
+décompresser le fichier permabook.zip
+déposer le dossier "permabook" obtenu qui contient les fichiers du site dans le répertoire de publication de votre serveur web [par défaut : [...]/www/certa]
+
+BASE DE DONNEES 
+  créer une base : permabook  (jeu de caractères : utf8_bin)
+  créer un utilisateur avec tous les droits sur cette base : permauser // mot de passe : permapass
+  il est possible d'utiliser un utilisateur existant mais il faudra modifier le fichier wp-config.php présent à la racine du site : lignes 26 (nom_utilisateur) et 29 (mot_de_passe).
+  
+  IMPORTER les tables de la base grâce au fichier permabook.sql
+  
+  MODIFICATIONS de la base de données permabook
+  Table wpst1_options
+  siteurl   => url d'accès au site web [par défaut : http://localhost/permabook]      
+  home      => url d'accès au site web [par défaut : http://localhost/permabook] 
+
+Mots de passe
+admin (mot de passe : bts.sio@a) : utilisateur ayant tous les droits ;
+gestioncom (mot de passe bts.sio@g) : gestionnaire de boutique ;
+deux clients : Jean Neymar et Agathe Zeblouz avec les identifiants agatheze et jeanney et le mot de passe bts.sio@u ;
+
+SE CONNECTER au site avec admin
+
+MISE A JOUR DES PERMALIENS
+Réglages => permaliens => enregistrer les modifications  
