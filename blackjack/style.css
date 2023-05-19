@@ -1,0 +1,37 @@
+img {
+    box-shadow: 15px 15px 15px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+img:hover {
+    transform:scale(1.2);
+}   
+#tapis {
+    border: solid black;
+    border-radius: 25px;
+    width: 60%;
+    background-color: darkgreen;
+    box-shadow:  15px 15px 15px;
+}
+#fond {
+    background-image: url(images/fond.jpg);
+}
+button {
+    border-radius: 15px;
+    width: 100px;
+    height: 60px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #143115; /* Green */
+  color: white;
+}
+#bouton {
+    display: flex;
+    justify-content: center;
+    
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BlackJack</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" type="text/javascript" language="JavaSript">
+</script>
+</head>
+<body>
+<div id="head">
+    <h1>BlackJack</h1>
+</div>
+<div id="fond">
+    <div id="tapis">
+        <!-- BANQUE -->
+        <!-- BANQUE -->
+        <div>
+            <h2>Les cartes de la banque</h2>
+                <p id="banque">
+                    <script>
+                        carte = carteAleatoire();
+                        CalculerScoreBanque();
+                        document.write("<img src='images/" + carte + ".jpg'>");    
+                    </script>
+                <span id="verso"><img src="images/verso.jpg"><img src="images/verso.jpg"><img src="images/verso.jpg"><img src="images/verso.jpg"></span>
+                </p>
+        </div>
+        <!-- JOUEUR-->
+        <!-- JOUEUR-->
+        <div>
+            <h2>Vos cartes</h2>
+                <p id="joueur">
+                    <script>
+                        carte = carteAleatoire();
+                        CalclerScoreJoueur();
+                        document.write("<img src='images/" + carte + ".jpg'>");    
+                    </script>
+                </p>
+        </div>
+        </div>   
+</div>
+<div id="score">
+    <p>La banque a <span id="scoreBanque"><script>document.write(scoreBanque)</script></span></p>
+    <p>Vous avez <span id="scoreJoueur"><script>document.write(scoreJoueur)</script></span>.Carte ou reste?</p>
+</div>
+<!-- FORMULAIRE-->
+<!-- FORMULAIRE--> 
+<div id="bouton">
+    <button  value="Carte" onclick="Carte()">Carte</button> 
+    <button  value="Reste" onclick="Reste()">Reste</button> 
+    <button  value="Rejouer" onclick="window.location.reload(true)">Rejouer</button> 
+</div>   
+</body>
+</html>
